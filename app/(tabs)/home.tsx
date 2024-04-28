@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { Picker } from "@react-native-picker/picker";
 
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
@@ -6,13 +7,7 @@ import { Text, View } from "@/components/Themed";
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/home.tsx" />
+      <Text style={styles.title}>Home coming soon</Text>
     </View>
   );
 }
@@ -22,6 +17,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  picker: {
+    height: 50,
+    width: 150,
   },
   title: {
     fontSize: 20,
